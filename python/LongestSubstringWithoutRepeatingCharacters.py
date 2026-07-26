@@ -1,32 +1,25 @@
-# https://leetcode.com/problems/longest-substring-without-repeating-characters/
+# https://leetcode.com/problems/remove-nth-node-from-end-of-list/
 
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
 class Solution:
-    def lengthOfLongestSubstring(self, s: str) -> int:
-        seen = {}
-        longest = 0
-        count = 0
-        # Don't count left of this index
-        limit = 0
+    def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
+        fast = head
+        slow = head
 
-        # When we see a character note its index
-        for i in range(len(s)):
-            c = s[i]
-            count += 1
-            # If an index has already been set, we've seen it
-            if c not in seen:
-                seen[c] = i
-            else:
-                # Avoid backtracking if an already seen letter has a greater index than the one we're overwriting
-                limit = max(limit, seen[c])
-                count = i - limit
-                seen[c] = i
-            
-            # Count distance from last time it was seen
-            longest = max(longest, count)
-
-            #Cannot be unique anymore according to hint
-            if i > 100:
-                break
+        #Move the fast pointer ahead by the size of the index to delete so it is exhausted first.
+        for i in range(n):
+            fast = fast.next
         
-        # Whichever is highest distance is the length
-        return longest
+        if not fast:
+            return head.next
+        
+        while fast.next:
+            fast = fast.next
+            slow = slow.next
+        
+        slow.next = slow.next.next
+        return head
