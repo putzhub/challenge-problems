@@ -1,3 +1,5 @@
+// https://www.codewars.com/kata/5bdc191306a8a678f6000187
+
 function shiftLeft(s, t) {
   let i = s.length, j = t.length;
   
