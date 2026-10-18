@@ -1,14 +1,13 @@
 // https://www.codewars.com/kata/5669a5113c8ebf16ed00004c
 
 function substringTest(str1, str2){
-  //Find out which string to run .includes from
-  const biggerString = str1.length > str2.length ? str1 : str2;
-  const smallerString = str1.length < str2.length ? str1 : str2;
+  //Normalize for comparisons
+  str1 = str1.toLowerCase();
+  str2 = str2.toLowerCase();
   
-  for(let i = smallerString.length-1; i > 2; i-- ){
-    //As we decrease the size check from both ends for possible substring
-    if(biggerString.includes(smallerString.slice(i)) ||
-      biggerString.includes(smallerString.slice(0, -i))){
+  //Only check each possible 2 char subset since it's the minimum we need to pass
+  for(let i=0; i < str2.length-1; i++){
+    if(str1.indexOf(str2.substring(i, i+2)) > -1){
       return true;
     }
   }
