@@ -10,7 +10,7 @@ I'm largely focusing on Javascript at the moment, but I've done leetcode on Pyth
 
 ## Lessons Learned:
 
-Writing code is still important even in the age of AI. Being able to identify optimal solutions or read ones that others have come up with an identify *why* it works is key to developing the skills needed for good software engineering. To keep up with code literacy I practice daily and make sure to study the optimal solutions that people submit to understand how they acheived their results. That way I can continually improve my practice.
+Writing code is still important even in the age of AI. Being able to identify optimal solutions or read ones that others have come up with and identify *why* it works is key to developing the skills needed for good software engineering. To keep up with code literacy I practice daily and add solutions to my [Anki](https://apps.ankiweb.net/) deck to engrain them in my memory.
 
 ## Examples:
 
