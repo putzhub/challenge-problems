@@ -4,9 +4,9 @@ This repository is dedicated to hosting my daily coding challenge solutions.
 
 ## How It's Made:
 
-**Languages being practiced:** Javascript
+**Languages being practiced:** Javascript, Python
 
-I'm largely focusing on Javascript at the moment, but I've done leetcode on Python as well before I started following the 100Devs academy program which focuses on full stack development with Javascript, HTML and CSS.
+As much as possible I try to do daily coding challenges from leetcode or codewars and submit them to this repository.
 
 ## Lessons Learned:
 
