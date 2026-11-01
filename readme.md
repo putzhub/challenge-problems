@@ -4,8 +4,6 @@ This repository is dedicated to hosting my daily coding challenge solutions.
 
 ## How It's Made:
 
-**Languages being practiced:** Javascript, Python
-
 As much as possible I try to do daily coding challenges from leetcode or codewars and submit them to this repository.
 
 ## Lessons Learned:
