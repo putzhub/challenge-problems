@@ -12,6 +12,7 @@ Writing code is still important even in the age of AI. Being able to identify op
 
 ## Examples:
 
-[You can find me on codewars here!](https://www.codewars.com/users/putzhub)
+[Find me on codewars](https://www.codewars.com/users/putzhub)
+[Find me on Leetcode](https://leetcode.com/u/putzhub/)
 
 Those solutions make it to this repository as well.
