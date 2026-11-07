@@ -30,3 +30,22 @@ function diamondsAndToads(sentence, fairy) {
   
   return result;
 }
+
+// Cleaner version someone else wrote as a solution
+// const diamondsAndToads = (sentence, fairy) => {
+// 
+//   let count = char => (sentence.split(char).length - 1);
+//   
+//   if (fairy === 'good') 
+//     return { 
+//           ruby: count('r') + count('R') * 2, 
+//        crystal: count('c') + count('C') * 2 
+//     };
+//   
+//   if (fairy === 'evil')
+//     return { 
+//         python: count('p') + count('P') * 2, 
+//       squirrel: count('s') + count('S') * 2 
+//     };
+//     
+// }
