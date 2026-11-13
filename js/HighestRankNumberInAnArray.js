@@ -5,7 +5,6 @@ function highestRank(arr){
   let result = arr[0];
   // put array into a hash map
   let map = arr.reduce((m, e) => m.set(e, m.has(e) ? m.get(e) + 1 : 1), new Map());
-  console.log(map)
   // return the largest count of the same element
   for(const [key, value] of map){
     if(value > map.get(result)){
